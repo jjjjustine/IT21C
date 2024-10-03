@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h1>Topic 1 - Object and Classes</h1>
+    <h1 id="Person-name"></h1>
+    <h1 id="Person-age"></h1>
+    <h1 id="Person-occupation"></h1>
+
+
+    <script>
+       //Input
+        const Person ={
+            name:"Jane Justine",
+            age:19,
+            occupation:"Student"
+        }
+
+        //Process and Output
+
+        //Solution 1: Display via console.log
+        console.log("Name: " + Person.name);
+        console.log("Age: "  +Person.age);
+        console.log("Occupation: " + Person.occupation);
+
+        //Solution 2: Display via HTML
+        document.getElementById("Person-name").innerHTML = "Name: " + Person.name;
+        document.getElementById("Person-age").innerHTML = "Age: " + Person.age;
+        document.getElementById("Person-occupation").innerHTML = "Occupation: " + Person.occupation;
+
+
+    </script>
+</body>
+</html>
