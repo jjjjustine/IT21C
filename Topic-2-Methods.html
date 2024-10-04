@@ -24,6 +24,15 @@
                 this.occupation = occupation;
                 this.sex = sex;
             }
+
+            // Method to display person information in the console
+            displayInfo() {
+                console.log("Name: " + this.name);
+                console.log("Age: " + this.age);
+                console.log("Occupation: " + this.occupation);
+                console.log("Sex: " + this.sex);
+            }
+
             // Method to display person information in the HTML
             displayInfoHTML() {
                 const personElement = document.getElementById('personOne');
