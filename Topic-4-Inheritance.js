@@ -49,3 +49,28 @@ class Person{
     }
 }
 
+class Student extends Person {
+    constructor(name, age, occupation, year, major) {
+        super(name, age, occupation, year);
+        this.major = major;
+    }
+
+    // Overriding the displayInfo method
+    displayInfo() {
+        super.displayInfo();
+        console.log("Major: " + this.major);
+    }
+
+    // Extending the displayInfoHTML method
+    displayInfoHTML() {
+        super.displayInfoHTML();
+        const personElement = document.getElementById('personOne');
+        personElement.innerHTML += `<br><strong>Major:</strong> ${this.major}`;
+    }
+}
+
+// Creating an instance of the Student class
+const studentOne = new Student('Jane Justine', 19, 'Student', 'Second Year', 'Information Technology');
+
+// Calling methods
+studentOne.displayInfo();
