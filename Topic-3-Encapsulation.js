@@ -10,4 +10,16 @@ class Person{
         this.#age = age;
         this.#occupation = occupation;
     }
+     //Getters
+     get name(){
+        return this.#name;
+    }
+
+    get age(){
+        return this.#age;
+    }
+
+    get occupation(){
+        return this.#occupation;
+    }
 } 
